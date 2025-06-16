@@ -196,3 +196,42 @@ main > section {
   align-items: center;
   justify-content: center;
 }
+
+/* Zoom suave na imagem do produto */
+.zoom-img-wrapper {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.zoom-img {
+  transition: transform 0.4s cubic-bezier(.4,2,.3,1);
+  cursor: zoom-in;
+}
+.zoom-img:hover {
+  transform: scale(1.13);
+  z-index: 2;
+}
+
+/* Animação de produto adicionado ao carrinho */
+.carrinho-animacao {
+  animation: carrinhoFadeInOut 1.2s both;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes carrinhoFadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}

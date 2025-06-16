@@ -52,3 +52,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// Animação de adicionar ao carrinho
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".btn-add-carrinho").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const card = btn.closest(".card");
+      const anim = card.querySelector(".carrinho-animacao");
+      if (anim) {
+        anim.classList.remove("d-none");
+        anim.classList.remove("carrinho-animacao"); // reset animation
+        void anim.offsetWidth; // trigger reflow
+        anim.classList.add("carrinho-animacao");
+        setTimeout(() => {
+          anim.classList.add("d-none");
+        }, 1200);
+      }
+    });
+  });
+});
