@@ -1,0 +1,200 @@
+/* =========================
+   Variáveis e Reset
+   ========================= */
+:root {
+  --cor-primaria: #ff6b6b;
+  --cor-secundaria: #aad8d5;
+  --cor-texto: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* =========================
+   Gradiente de Texto
+   ========================= */
+.gradiente-texto {
+  background: linear-gradient(
+    to right,
+    var(--cor-primaria),
+    var(--cor-secundaria)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar {
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+}
+
+.navbar-brand img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(78, 205, 196, 0.08);
+  background: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #3b53b7 !important;
+  transition: color 0.2s;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  background: var(--cor-secundaria, #217973);
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* =========================
+   Tipografia e Botões
+   ========================= */
+.titulo-petcare {
+  color: #3b53b7;
+  line-height: 0.9;
+}
+
+.subtitulo-petcare {
+  color: #3b53b7;
+  font-weight: 400;
+}
+
+.btn-agendar {
+  background-color: #3b53b7;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+.btn-primary:hover {
+  background-color: #ff5252;
+  border-color: #ff5252;
+}
+
+/* =========================
+   Ícones
+   ========================= */
+.bi {
+  margin-right: 8px;
+  color: var(--cor-primaria);
+}
+
+/* =========================
+   Cards de Produtos
+   ========================= */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Carrossel Circular
+   ========================= */
+.carousel-container {
+  background: #ff867c;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+}
+
+.carousel-img-bg {
+  background: #ff867c;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.img-full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.button-carousel {
+  background-color: #ff867c;
+}
+
+/* =========================
+   Formulário de Contato
+   ========================= */
+.form-control:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 107, 0.25);
+}
+
+.was-validated .form-control:valid {
+  border-color: #28a745;
+}
+
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+/* =========================
+   Responsividade
+   ========================= */
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 0 !important;
+  }
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-container {
+    width: 220px !important;
+    height: 220px !important;
+  }
+  .display-1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* =========================
+   Seções
+   ========================= */
+main > section {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

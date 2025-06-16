@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShop Feliz - Contato</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../midia/imagens/logo-favicon.svg"
+    />
+  </head>
+  <body>
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img
+            src="../midia/imagens/logo.png"
+            alt="Logo PetShop Feliz"
+            width="150"
+            height="122"
+            class="me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="../index.html">
+                <i class="bi bi-house-door me-1"></i>Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="produto.html">
+                <i class="bi bi-bag me-1"></i>Produtos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="contato.html">
+                <i class="bi bi-envelope me-1"></i>Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Conteúdo da página de contato -->
+    <main class="container mt-4">
+      <h1 class="text-center gradiente-texto mb-4">Entre em Contato</h1>
+
+      <div class="row">
+        <!-- Formulário de contato -->
+        <div class="col-md-6">
+          <form
+            class="needs-validation"
+            novalidate
+            action="https://escola.ifrs.edu/cadastro.php"
+            method="get"
+          >
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                name="nome"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefone"
+                name="telefone"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="assunto" class="form-label">Assunto</label>
+              <select class="form-select" id="assunto" name="assunto">
+                <option selected>Selecione...</option>
+                <option>Dúvida</option>
+                <option>Sugestão</option>
+                <option>Reclamação</option>
+                <option>Orçamento</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+
+        <!-- Informações de contato e mapa -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Informações de Contato</h5>
+              <p class="card-text">
+                <i class="bi bi-geo-alt-fill"></i> Rua dos Animais Fofinhos, 123
+                - Centro<br />
+                <i class="bi bi-telephone-fill"></i> (54) YYYY-YYYY<br />
+                <i class="bi bi-whatsapp"></i> (54) 9XXXX-XXXX<br />
+                <i class="bi bi-envelope-fill"></i> contato@petshopfeliz.com.br
+              </p>
+            </div>
+          </div>
+
+          <h5 class="mb-3">Nosso Local</h5>
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.228294942392!2d-52.292072399999995!3d-27.6389795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e3146bf4ff2d7b%3A0x55e1c0fe80f707dd!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2CCi%C3%AAncia%20e%20Tecnologia%20do%20Rio%20Grande%20do%20Sul%20-%20Campus%20Erechim!5e1!3m2!1spt-BR!2sbr!4v1750085928839!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Vídeo demonstrativo -->
+          <h5 class="mt-4 mb-3">Como cuidamos do seu pet</h5>
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="../midia/video/video-pet1.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé (igual em todas as páginas) -->
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+      <p>&copy; 2025 PetShop Feliz - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
