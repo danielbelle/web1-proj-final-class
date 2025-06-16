@@ -73,177 +73,107 @@
 
     <main>
       <!-- Primeira seção -->
-      <section class="align-items-center section-70vh container">
-        <!-- Texto à esquerda -->
-        <div class="col-md-6 text-center text-md-center mb-3 mb-md-0">
-          <h1 class="fw-bold display-1 titulo-petcare">
-            Pet<br />
-            Care
-          </h1>
-          <h4 class="mt-4 mb-4 subtitulo-petcare">Veterinário em Domicílio</h4>
-          <a
-            href="paginas/contato.html"
-            class="btn btn-primary px-4 py-2 btn-agendar"
-            >AGENDE UMA VISITA</a
-          >
-        </div>
-        <!-- Carrossel circular à direita -->
-        <div class="col-md-6 d-flex justify-content-center">
-          <div
-            class="carousel-container position-relative ms-md-3"
-            style="margin-left: 0.5rem"
-          >
-            <div
-              id="carouselPets"
-              class="carousel slide h-100"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                  <img
-                    src="midia/imagens/pet1.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Cachorro feliz"
-                  />
-                </div>
-                <div class="carousel-item h-100">
-                  <img
-                    src="midia/imagens/pet3.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Gato Cinza"
-                  />
-                </div>
-                <div class="carousel-item h-100">
-                  <img
-                    src="midia/imagens/pet2.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Cachorro Feliz"
-                  />
-                </div>
-                <div class="carousel-item h-100">
-                  <img
-                    src="midia/imagens/pet4.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Gato Malhado"
-                  />
+      <section
+        class="container d-flex align-items-center justify-content-center min-vh-70 py-5"
+      >
+        <div class="row w-100 align-items-center">
+          <div class="col-md-6 d-flex justify-content-center mb-3 mb-md-0">
+            <div class="carousel-container position-relative me-md-3">
+              <div
+                id="carouselPets2"
+                class="carousel slide h-100"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active h-100">
+                    <img
+                      src="midia/imagens/pet1.png"
+                      class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
+                      alt="Cachorro feliz"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="midia/imagens/pet3.png"
+                      class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
+                      alt="Gato Cinza"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="midia/imagens/pet2.png"
+                      class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
+                      alt="Cachorro Feliz"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="midia/imagens/pet4.png"
+                      class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
+                      alt="Gato Malhado"
+                    />
+                  </div>
                 </div>
               </div>
+              <!-- Controles do carrossel -->
+              <button
+                class="carousel-control-prev button-carousel"
+                type="button"
+                data-bs-target="#carouselPets2"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next button-carousel"
+                type="button"
+                data-bs-target="#carouselPets2"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
-            <!-- Controles do carrossel -->
-            <button
-              class="carousel-control-prev button-carousel"
-              type="button"
-              data-bs-target="#carouselPets"
-              data-bs-slide="prev"
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h1 class="fw-bold display-1 titulo-petcare">
+              Pet<br />
+              Care
+            </h1>
+            <h4 class="mt-4 mb-4 subtitulo-petcare">
+              Veterinário em Domicílio
+            </h4>
+            <a
+              href="paginas/contato.html"
+              class="btn btn-primary btn-lg px-4 py-2 btn-agendar"
+              >AGENDE UMA VISITA</a
             >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              class="carousel-control-next button-carousel"
-              type="button"
-              data-bs-target="#carouselPets"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
           </div>
         </div>
       </section>
       <!-- Segunda seção -->
-      <section class="align-items-center section-70vh container">
-        <div class="col-12 text-center">
-          <h2 class="fw-bold mb-4 subtitulo-petcare">Produtos para seu Pet</h2>
-          <p class="lead mb-4">
-            Conheça nossa linha completa de produtos para o bem-estar do seu
-            pet!
-          </p>
-          <p class="lead mb-4">
-            Temos rações, brinquedos, acessórios, itens de higiene, petiscos e
-            muito mais, tudo selecionado com carinho para garantir saúde,
-            diversão e conforto para seu melhor amigo.
-          </p>
-          <a
-            href="paginas/produto.html"
-            class="btn btn-primary px-4 py-2 btn-agendar"
-            >VER PRODUTOS</a
-          >
-        </div>
-      </section>
-      <!-- Terceira seção -->
-      <section class="align-items-center mt-4 section-70vh container">
-        <!-- Carrossel circular à esquerda -->
-        <div class="col-md-6 d-flex justify-content-center mb-3 mb-md-0">
-          <div
-            class="carousel-container position-relative me-md-3"
-            style="margin-right: 0.5rem"
-          >
-            <div
-              id="carouselPets2"
-              class="carousel slide h-100"
-              data-bs-ride="carousel"
+      <section
+        class="container d-flex align-items-center justify-content-center min-vh-70 py-5"
+      >
+        <div class="row w-100 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="fw-bold mb-4 subtitulo-petcare">
+              Produtos para seu Pet
+            </h2>
+            <p class="lead mb-4">
+              Conheça nossa linha completa de produtos para o bem-estar do seu
+              pet!
+            </p>
+            <p class="lead mb-4">
+              Temos rações, brinquedos, acessórios, itens de higiene, petiscos e
+              muito mais, tudo selecionado com carinho para garantir saúde,
+              diversão e conforto para seu melhor amigo.
+            </p>
+            <a
+              href="paginas/produto.html"
+              class="btn btn-primary btn-lg px-4 py-2 btn-agendar"
+              >VER PRODUTOS</a
             >
-              <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                  <img
-                    src="midia/imagens/pet1.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Cachorro feliz"
-                  />
-                </div>
-                <div class="carousel-item h-100">
-                  <img
-                    src="midia/imagens/pet3.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Gato Cinza"
-                  />
-                </div>
-                <div class="carousel-item h-100">
-                  <img
-                    src="midia/imagens/pet2.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Cachorro Feliz"
-                  />
-                </div>
-                <div class="carousel-item h-100">
-                  <img
-                    src="midia/imagens/pet4.png"
-                    class="d-block mx-auto rounded-circle object-fit-cover carousel-img-bg img-full-size"
-                    alt="Gato Malhado"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- Controles do carrossel -->
-            <button
-              class="carousel-control-prev button-carousel"
-              type="button"
-              data-bs-target="#carouselPets2"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              class="carousel-control-next button-carousel"
-              type="button"
-              data-bs-target="#carouselPets2"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
           </div>
-        </div>
-        <!-- Texto à direita -->
-        <div class="col-md-6 text-center text-md-center">
-          <h1 class="fw-bold display-1 titulo-petcare">
-            Pet<br />
-            Care
-          </h1>
-          <h4 class="mt-4 mb-4 subtitulo-petcare">Veterinário em Domicílio</h4>
-          <a
-            href="paginas/contato.html"
-            class="btn btn-primary px-4 py-2 btn-agendar"
-            >AGENDE UMA VISITA</a
-          >
         </div>
       </section>
     </main>
