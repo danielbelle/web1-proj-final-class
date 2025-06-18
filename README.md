@@ -97,7 +97,8 @@ responsividade.
 2. Abra o arquivo `index.html` em seu navegador.
 3. Navegue pelas páginas utilizando o menu de navegação.
 4. Ou acesse a versão online hospedada no
-   [GitHub Pages](https://pages.github.com/) (caso disponível).
+   [GitHub Pages](https://danielbelle.github.io/web1-proj-final-class/) (caso
+   disponível).
 
 ---
 
